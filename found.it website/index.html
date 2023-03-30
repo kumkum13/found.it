@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="style" href="style.css">
+    <title>Found.it</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        "index.js"
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: pink; font-size: 40px;">
+            <a class="navbar-brand" href="#" style="color: palevioletred; font-style: italic; text-decoration: underline; font-weight: 1000; font-size: 120px;">Found.it</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Profile
+                          </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profile.html">log in</a></li>
+                            <li><a class="dropdown-item" href="signin.html">sign in</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Wishlist
+                </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=women+clothes&tbm=isch&ved=2ahUKEwjWzre8nMb9AhXQD7cAHW0aCj0Q2-cCegQIABAA&oq=women+clothes&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCAAQCBAeOgcIIxDqAhAnOgQIABBDOggIABCABBCxAzoLCAAQgAQQsQMQgwE6CAgAELEDEIMBUO0EWLMxYOw0aAFwAHgEgAH7AYgB0heSAQYwLjE4LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=QUsFZJaqFdCf3LUP7bSo6AM&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013">Clothes</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=women+accessories&tbm=isch&ved=2ahUKEwi9oMzCnMb9AhX1oOkKHfE_ACIQ2-cCegQIABAA&oq=women+acc&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoECAAQQzoLCAAQgAQQsQMQgwE6CAgAEIAEELEDOggIABCxAxCDAVCzBVj5HmD9LmgAcAB4AIABvAGIAcINkgEEMC4xMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=TksFZL3BEPXBpgfx_4CQAg&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013">Accessories</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=women+jewellery&tbm=isch&ved=2ahUKEwj5zsDTnMb9AhWl9zgGHYUaATEQ2-cCegQIABAA&oq=women+jewe&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoECAAQQzoICAAQgAQQsQM6CwgAEIAEELEDEIMBOggIABCxAxCDAVDQBFjcI2DtMWgAcAB4AIAB7gGIAZQVkgEGMC4xNC4ymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=cUsFZLnSLKXv4-EPhbWEiAM&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013">Jewellery</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=women+beauty+products&tbm=isch&ved=2ahUKEwiDrsbmnMb9AhVJ8jgGHTq5BgMQ2-cCegQIABAA&oq=women+beau&gs_lcp=CgNpbWcQARgCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoICAAQgAQQsQM6BAgAEEM6CwgAEIAEELEDEIMBOggIABCxAxCDAVCsBliSIWCTO2gAcAB4AIAB-wGIAbsRkgEGMC4xMy4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=mUsFZMP9KMnk4-EPuvKaGA&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013">Beauty</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=electronics+products&tbm=isch&ved=2ahUKEwjVuI72nMb9AhVaxnMBHZDgBoUQ2-cCegQIABAA&oq=ele&gs_lcp=CgNpbWcQARgCMgQIIxAnMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDOgYIABAHEB46BAgAEB46BggAEAgQHjoGCAAQBRAeOgcIIxDqAhAnOgUIABCABDoICAAQgAQQsQM6CAgAELEDEIMBOgsIABCABBCxAxCDAToHCAAQsQMQQ1CGBVihNmDHS2gDcAB4BIAByAGIAY8PkgEGMC4xMC4xmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=uksFZNXzEtqMz7sPkMGbqAg&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013">Electronics</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=footwear&tbm=isch&ved=2ahUKEwiShpuGncb9AhWq7jgGHWoOAOYQ2-cCegQIABAA&oq=+foot&gs_lcp=CgNpbWcQARgAMgQIIxAnMgQIABBDMgQIABBDMgQIABBDMgcIABCxAxBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgoIABANEIAEELEDOgUIABCABDoHCCMQ6gIQJzoICAAQgAQQsQM6CwgAEIAEELEDEIMBUIYHWMQWYPRPaAFwAHgAgAHCAYgBsgaSAQMwLjWYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=3EsFZJKoBKrd4-EP6pyAsA4&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013#imgrc=WjbkiLIbGkEX5M">Footware</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=home+products&rlz=1C1CHBF_enIN1013IN1013&sxsrf=AJOqlzVRBT-aw4mQeo_D5BmZglqM7jAwPQ:1678068813901&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjStL68ncb9AhVd03MBHQ0vDncQ_AUoAnoECAEQBA&biw=1536&bih=746&dpr=1.25">Home </a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=kitchen+products&tbm=isch&ved=2ahUKEwiM6fq9ncb9AhWklmMGHeTcDHcQ2-cCegQIABAA&oq=kitchen+products&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BAgAEEM6BggAEAcQHjoHCAAQsQMQQzoHCAAQgAQQE1CvBliXNGC7RGgAcAB4AIABwAGIAeMRkgEEMC4xNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=UEwFZIyBPKStjuMP5LmzuAc&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013">Kitchen</a></li>
+                            <li><a class="dropdown-item" href="https://www.google.com/search?q=health+care+products&tbm=isch&ved=2ahUKEwiSm9fOncb9AhWFyaACHfEnBCcQ2-cCegQIABAA&oq=health&gs_lcp=CgNpbWcQARgDMgQIIxAnMgQIABBDMgQIABBDMgQIABBDMgcIABCxAxBDMgQIABBDMgQIABBDMgQIABBDMgcIABCxAxBDMgQIABBDOgUIABCABDoHCCMQ6gIQJzoICAAQgAQQsQNQ4wNYtyBgxTxoAXAAeASAAcEBiAGMEJIBBDAuMTKYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=dEwFZJKRA4WTg8UP8c-QuAI&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013">Healthcare</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+                <button type="button" class="btn btn-outline-info" style="color: ">Cart</button>
+
+
+            </div>
+        </div>
+    </nav>
+    <div style="background-image: url(https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg);">
+        <figure class="text-center">
+            <blockquote class="blockquote" style="font-size: 80px;  font-style: italic;">
+                <p> Keep your heels, head and standards high</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                <cite title="Source Title">—Coco Chanel</cite>
+            </figcaption>
+        </figure>
+        <hr>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=saree&rlz=1C1CHBF_enIN1013IN1013&sxsrf=AJOqlzXb7b81_YACaX_4RNA7FvMY9CQhmw:1678067124112&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjl6N2Wl8b9AhWCxjgGHdvODSgQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25"
+                    style="color: palevioletred;">Sarees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=kurties&tbm=isch&ved=2ahUKEwjww5mYl8b9AhVLtWMGHUJRDfAQ2-cCegQIABAA&oq=kurties&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgcIABCABBAKMgUIABCABDoECCMQJzoKCAAQDRCABBCxAzoNCAAQDRCABBCxAxCDAToHCAAQDRCABDoICAAQsQMQgwE6CAgAEIAEELEDOgsIABCABBCxAxCDAToECAAQQzoHCCMQ6gIQJzoHCAAQsQMQQzoKCAAQsQMQgwEQQ1DoBViOJWD4MGgBcAB4AIAB0AGIAYQQkgEGMC4xMS4xmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=t0UFZLCMC8vqjuMPwqK1gA8&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Kurtis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=women+western+tops&tbm=isch&ved=2ahUKEwjixszNl8b9AhUYzaACHff-B9IQ2-cCegQIABAA&oq=women+western+&gs_lcp=CgNpbWcQARgCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoHCAAQgAQQCjoECAAQQzoICAAQgAQQsQM6CwgAEIAEELEDEIMBOgcIIxDqAhAnOggIABCxAxCDAToECAAQA1DBClj9QWC3VGgBcAB4AYABnAKIAZsdkgEGMC4xOC4zmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=J0YFZKKXCpiag8UP9_2fkA0&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;"> Women Western Topwear</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=women+western+bottom+wear&tbm=isch&ved=2ahUKEwjOsbjml8b9AhVcpdgFHU96DdYQ2-cCegQIABAA&oq=women+western+bottom+wear&gs_lcp=CgNpbWcQAzIGCAAQCBAeOgQIIxAnOgQIABAeOgUIABCABDoGCAAQBRAeUJ8FWPByYKB7aAVwAHgAgAHRAYgB6xmSAQYwLjE4LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=W0YFZI6YENzK4t4Pz_S1sA0&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;"> Women Western Bottomwear</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=women+sleepwear&tbm=isch&ved=2ahUKEwjOtfP-l8b9AhXJ8zgGHZg8AukQ2-cCegQIABAA&oq=women+slee&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCAAQCBAeOgsIABCABBCxAxCDAToICAAQgAQQsQM6CAgAELEDEIMBUOzSBljp7wZg4_4GaAFwAHgAgAHFAYgBkRiSAQQwLjE4mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=jkYFZM62Isnn4-EPmPmIyA4&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;"> Women Sleepwear</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=women+innerwear&tbm=isch&ved=2ahUKEwjl7uK6mMb9AhXIjdgFHQGuBzgQ2-cCegQIABAA&oq=women+inner&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCAAQBxAeOgQIABBDOggIABCABBCxAzoLCAAQgAQQsQMQgwE6CAgAELEDEIMBOgQIABADUJQFWKsrYPQ5aABwAHgAgAHiAYgB4hSSAQYwLjEzLjKYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=DEcFZOW4B8ib4t4PgdyewAM&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;"> Women Innerwear</a>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=women+footwear&tbm=isch&ved=2ahUKEwiP4pvQmMb9AhVUFLcAHQ39Du0Q2-cCegQIABAA&oq=women+foot&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgsIABCABBCxAxCDATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCAAQBxAeOgQIABAeOgYIABAFEB46CAgAEIAEELEDOggIABCxAxCDAToECAAQAzoECAAQQ1CAB1jxIWCcL2gAcAB4AIABwQGIAZYSkgEEMC4xNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=OUcFZM_hBdSo3LUPjfq76A4&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Women Footwear</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=kids+essentials&tbm=isch&ved=2ahUKEwjQycPnmMb9AhWmkdgFHaa_C8EQ2-cCegQIABAA&oq=kids+ess&gs_lcp=CgNpbWcQARgBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoECAAQQzoLCAAQgAQQsQMQgwE6BwgjEOoCECc6CAgAEIAEELEDOgcIABCxAxBDOggIABCxAxCDAVCABFixS2DvWmgDcAB4BIAB5AGIAcUdkgEGMC4xOC4zmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=aUcFZJDxO6aj4t4Ppv-uiAw&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=home+and+kitchen+products&tbm=isch&ved=2ahUKEwiChv_6mMb9AhUFyaACHXpwAZwQ2-cCegQIABAA&oq=home+and+kit&gs_lcp=CgNpbWcQARgBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCAAQBxAeOgcIIxDqAhAnOggIABCABBCxAzoICAAQsQMQgwE6BAgAEEM6CwgAEIAEELEDEIMBUOoFWNoyYOZEaAFwAHgEgAHJAYgBlBiSAQYwLjE3LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=kkcFZIL1MIWSg8UP-uCF4Ak&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Home & Kitchen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=beauty+products&tbm=isch&ved=2ahUKEwjOxbGMmcb9AhX-9zgGHT-eAxwQ2-cCegQIABAA&oq=beauty+pr&gs_lcp=CgNpbWcQARgAMgcIABCxAxBDMgQIABBDMgUIABCABDIFCAAQgAQyBAgAEEMyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgQIIxAnOgYIABAHEB46BggAEAgQHjoGCAAQBRAeOgcIABCABBAYOgcIIxDqAhAnOggIABCABBCxAzoICAAQsQMQgwE6CwgAEIAEELEDEIMBUKMFWLwrYLw3aAFwAHgEgAG9AYgBkBSSAQQwLjE1mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=t0cFZI6OEf7v4-EPv7yO4AE&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Beauty</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=health+products&tbm=isch&ved=2ahUKEwj5lrKgmcb9AhX1TnwKHVx7B_cQ2-cCegQIABAA&oq=health+products&gs_lcp=CgNpbWcQARgAMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoECAAQQzoGCAAQBxAeOgcIABCxAxBDUPAFWOIeYMYwaABwAHgAgAG9AYgBmxCSAQQwLjEymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=4UcFZLmiDvWd8QPc9p24Dw&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Health</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=jewellery&tbm=isch&ved=2ahUKEwiSkOawmcb9AhUIwzgGHePbDVUQ2-cCegQIABAA&oq=jew&gs_lcp=CgNpbWcQARgCMgQIABBDMgQIABBDMgcIABCxAxBDMgQIABBDMgcIABCxAxBDMgcIABCxAxBDMgQIABBDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDOgQIIxAnOgUIABCABDoHCCMQ6gIQJ1D9BFjaGWCoM2gBcAB4BIABygGIAcIMkgEFMC44LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=A0gFZNKCJ4iG4-EP47e3qAU&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Jewellery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=hand+bags&tbm=isch&ved=2ahUKEwiK_YbGmcb9AhU-gGMGHVo-AxcQ2-cCegQIABAA&oq=hand+bags&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6BwgAELEDEEM6CAgAELEDEIMBOgQIABBDOgsIABCABBCxAxCDAToHCCMQ6gIQJ1DCBFjBKWDuMWgBcAB4BIAB3wGIAd4VkgEGMC4xMC41mAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=MEgFZIqlDb6AjuMP2vyMuAE&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Bags</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=footwear&tbm=isch&ved=2ahUKEwiL7prYmcb9AhWawTgGHXPkCyMQ2-cCegQIABAA&oq=foot&gs_lcp=CgNpbWcQARgCMgQIABBDMgcIABCxAxBDMgQIABBDMgcIABCxAxBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgcIABCxAxBDOgQIIxAnOggIABCABBCxAzoFCAAQgAQ6BwgjEOoCECc6CggAELEDEIMBEEM6CwgAEIAEELEDEIMBUOAEWNkYYKEuaAFwAHgEgAG-AYgBpw2SAQQwLjEwmAEAoAEBqgELZ3dzLXdpei1pbWewAQrAAQE&sclient=img&ei=VkgFZIvrEZqD4-EP88ivmAI&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Footwear</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.google.com/search?q=electronics+items&tbm=isch&ved=2ahUKEwjt0Krmmcb9AhXmptgFHeVQC7cQ2-cCegQIABAA&oq=electronic&gs_lcp=CgNpbWcQARgBMgcIABCxAxBDMgQIABBDMggIABCABBCxAzILCAAQgAQQsQMQgwEyBQgAEIAEMgUIABCABDIICAAQgAQQsQMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQ6BAgjECc6BwgjEOoCECc6CAgAELEDEIMBUIcFWNEyYKVCaAFwAHgEgAHlAYgBtRaSAQYwLjE1LjGYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCsABAQ&sclient=img&ei=c0gFZK3LN-bN4t4P5aGtuAs&bih=746&biw=1536&rlz=1C1CHBF_enIN1013IN1013"
+                    style="color: palevioletred;">Electronics</a>
+            </li>
+            <li>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-info" ">Search</button>
+            </li>
+
+
+        </ul>
+        <hr>
+        <h1 style="text-align: center; font-size: 80px; font-style: italic; ">Fashion Belongs To Everyone...</h1>
+        <hr>
+        <div id="carouselExampleSlidesOnly " class="carousel slide " data-bs-ride="carousel ">
+            <div id="carouselExample " class="carousel slide ">
+                <div class="carousel-inner " style="height: 650px; border-radius: 800px; ">
+                    <div class="carousel-item active " data-bs-interval="2000 ">
+                        <img src=" https://www.koimoi.com/wp-content/new-galleries/2022/06/4-times-chitrangda-singh-wowed-us-with-her-looks-during-the-promotions-of-modern-love-001.jpg " class="d-block w-100 " alt="... ">
+                    </div>
+                    <div class="carousel-item " data-bs-interval="2000 ">
+                        <img src=" https://i0.wp.com/www.wonderslist.com/wp-content/uploads/2018/08/Hottest-Bollywood-Actresses.jpg " class="d-block w-100 " alt="... ">
+                    </div>
+                    <div class="carousel-item " data-bs-interval="2000 ">
+                        <img src=" https://mcmscache.epapr.in/post_images/website_438/post_25334479/thumb.jpg " class="d-block w-100 " alt="... ">
+                    </div>
+                    <div class="carousel-item " data-bs-interval="2000 ">
+                        <img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/000/864/552/new_large/final_cover_%285%29.jpg?1558093244 " class="d-block w-100 " alt="... ">
+                    </div>
+                    <div class="carousel-item " data-bs-interval="2000 ">
+                        <img src="https://assets.gqindia.com/photos/5cdc62290f4cc056b1db0ef5/master/pass/Top-Image1.jpg " class="d-block w-100 " alt="... ">
+                    </div>
+                    <div class="carousel-item " data-bs-interval="2000 ">
+                        <img src=" https://i.insider.com/5a42d230430d03f1138b45fe?width=700 " class="d-block w-100 " alt="... ">
+
+                    </div>
+                    <div class="carousel-item " data-bs-interval="2000 ">
+                        <img src=" https://images.herzindagi.info/image/2020/May/celebrity-style.jpg " class="d-block w-100 " alt="... ">
+                    </div>
+                    <div class="carousel-item " data-bs-interval="2000 ">
+                        <img src=" https://www.koimoi.com/wp-content/new-galleries/2021/03/indian-western-anything-in-between-birthday-girl-shraddha-kapoor-can-slay-them-all-001.jpg " class="d-block w-100 " alt="... ">
+                    </div>
+                </div>
+                <button class="carousel-control-prev " type="button " data-bs-target="#carouselExample " data-bs-slide="prev ">
+          <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+          <span class="visually-hidden ">Previous</span>
+        </button>
+                <button class="carousel-control-next " type="button " data-bs-target="#carouselExample " data-bs-slide="next ">
+          <span class="carousel-control-next-icon " aria-hidden="true "></span>
+          <span class="visually-hidden ">Next</span>
+        </button>
+            </div>
+        </div>
+
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; font-style: italic; padding-left: 80px; ">
+                <p>lehenga....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://www.aishwaryadesignstudio.com/content/images/thumbs/0119707_trendy-pista-green-colored-designer-lehenga-choli.jpeg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://www.aishwaryadesignstudio.com/trendy-pista-green-colored-designer-lehenga-choli " class="btn btn-primary ">VIEW</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://www.aishwaryadesignstudio.com/content/images/thumbs/0117782_heavenly-blue-colored-designer-lehenga-choli.jpeg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://www.aishwaryadesignstudio.com/heavenly-blue-colored-designer-lehenga-choli-2 " class="btn btn-primary ">VIEW</a>
+                </div>
+            </div>
+
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0548/9901/5928/products/Pichwai_mehendi_lehenga_set-1.jpg?v=1664790517 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://elanstore.in/products/pichwai-mehendi-lehenga-set " class="btn btn-primary ">VIEW</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0269/9961/9650/products/GreyLehengaH_HBlouse2_800x.jpg?v=1612357198 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://nehatarun.com/products/lehenga-2 " class="btn btn-primary ">VIEW</a>
+                </div>
+
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://i0.wp.com/www.mystylestore.net/wp-content/uploads/2020/08/Vastram-Lehenga-2-3409-3.jpg?fit=800%2C1200&ssl=1 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="https://www.mystylestore.net/product/vastram-lehenga-2/ " class="btn btn-primary ">VIEW</a>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; font-style: italic; padding-left: 80px; ">
+                <p>Western Dress....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://www.k4fashion.com/wp-content/uploads/2022/08/Actress-promoting-anamika-web-series-in-western-dress-from-zara.jpg " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href=" " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 17rem; ">
+                <img src="http://www.pinkvilla.com/files/styles/large/public/tara_inline.jpg?itok=4RcHCEy7 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href=" " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 17.2rem ">
+                <img src="https://www.behindwoods.com/hindi-actress/kajal-aggarwal/kajal-aggarwal-stills-photos-pictures-1361.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href=" " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 14.8rem; ">
+                <img src="https://imgeng.jagran.com/webstories/30004/nusrat-jahan-western-outfit-1674634872.jpeg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href=" " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 14.9rem; ">
+                <img src="https://i.pinimg.com/236x/df/d1/3e/dfd13ed65851b2e5e89f8e675c5b288e.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href=" " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; color: font-style: italic; padding-left: 80px; ">
+                <p>Saare....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://www.pinkvilla.com/files/styles/large/public/90c696489806a4d8553c1d6df552b57f.jpg?itok=MEEbPRGR " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 17.8rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/1105/1322/products/BrightMauveRoseDesignerEmbroideredSilkPartyWearSaree-Saira_sBoutique.jpg?v=1667277400 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://i.pinimg.com/originals/81/db/fc/81dbfc26de224c0824143241b2317d00.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://static.wixstatic.com/media/c70d98_ade5f72ebd53483085e7a7d0b5cfeedb~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 16.6rem; ">
+                <img src="https://newsmeter.in/h-upload/2021/11/03/307515-jacqueline-fernande-in-yellow-saree.webp " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; font-style: italic; padding-left: 80px; ">
+                <p>Bags....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0667/8685/files/Saben_Christmas_2022_Blue_Whisper_8_1600x.jpg?v=1669065718 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://static-01.daraz.com.bd/p/d0cb78c167999637e65b30a43d2d91d3.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://i.ebayimg.com/images/g/9oEAAOSww35ggHQ2/s-l500.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="http://sc04.alicdn.com/kf/H5b72d2c15bc344878b90820f1879b0bfC.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0359/4420/2376/products/product-image-1751689998_grande.jpg?v=1631679435 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; font-style: italic; padding-left: 80px; ">
+                <p>Topwear....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/12512054/2023/2/2/89cd3dc2-185f-45a6-8b19-29b81641e7db1675333897892-KASSUALLY-Blue-Floral-Cinched-Waist-Smocked-Top-583167533389-2.jpg
+                    " class="card-img-top "
+                    alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19066168/2022/7/20/de54e202-eaf9-43e2-9fd1-716230d000401658315418189-Womens-Turquoise-Blue-Viscose-blend-Embroidered-Short-Top-74-1.jpg
+                    " class="card-img-top "
+                    alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 19.2rem; ">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/12/DD/WK/ZP/16413965/women-cotton-tops-500x500.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 16.2rem; ">
+                <img src="https://rukminim1.flixcart.com/image/612/612/kzygpzk0/kurta/c/c/n/s-anu1153-annu-paridhan-original-imagburgxue2fesm.jpeg?q=70 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 20.3rem; ">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20221104/dnrr/636526a1aeb269659c72c6bb/-473Wx593H-465138366-white-MODEL.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; font-style: italic; padding-left: 80px; ">
+                <p>Footwear....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://4.imimg.com/data4/CH/SJ/MY-8198729/4-500x500.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="http://sc04.alicdn.com/kf/He311956b8eba4807a7be3b14705be8909.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://static-01.daraz.pk/p/3c8d9b169025cd57749d4fabb0f22c89.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://images.meesho.com/images/products/117768507/akpxd_512.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://i.ebayimg.com/images/g/1z0AAOSww3Ziffzz/s-l1600.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; font-style: italic; padding-left: 80px; ">
+                <p>Jewellery....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71G48EhDXQL._UY500_.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://i.pinimg.com/564x/e9/82/9c/e9829cd2ceb0074e1beef14467a4d625.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://static-01.daraz.com.bd/p/6ace0b22d162f4a7d610921f0bec004c.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/1223/0734/products/enchanted-crystal-bracelet-bracelets-blingvine-373488_750x.jpg?v=1636525597 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/6112IhwBUCL._UY395_.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <figure>
+            <blockquote class="blockquote " style="font-size: 80px; font-style: italic; padding-left: 80px; ">
+                <p>Makeup....</p>
+            </blockquote>
+        </figure>
+        <hr>
+        <div class="row align-items-start ">
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/products/14_A_blush_duos_38aa2d46-9bce-4be0-b936-e24a3981bc0c_250x.jpg?v=1653485739 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0381/4277/1339/products/SIZE-W-600X-H-600-PX-24816_H_300x.jpg?v=1626183368 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/products/120825428_1128097164258791_1094984116637766638_n_430x.jpg?v=1604552902 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://i.pinimg.com/originals/50/f4/1d/50f41d4278d38fb0cd3476fb7c6080ce.jpg " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card " style="width: 18rem; ">
+                <img src="https://cdn.shopify.com/s/files/1/0251/3685/7187/products/thumbnail_3BC9342B-4D6E-40F7-88B6-BFF0E8A77737.jpg?v=1599817021 " class="card-img-top " alt="... ">
+                <div class="card-body ">
+                    <h5 class="card-title ">Card title</h5>
+                    <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="# " class="btn btn-primary ">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <footer >
+        <h1 style="margin-left: 60px; margin-top: 50px; color: palevioletred; font-size: 60px; font-style: italic; ">Shop Non-Stop on fount.it</h1>
+        <h3 style="margin-left: 380px; margin-bottom: 50px; ">Trusted by more than 1 Crore Indians</h3>
+        <hr>
+    </footer>
+
+
+
+
+</body>
+
+</html>
